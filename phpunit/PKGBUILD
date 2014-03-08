@@ -12,7 +12,7 @@ install='phpunit.install'
 source=("https://phar.phpunit.de/phpunit-${pkgver}.phar"
         "https://raw2.github.com/sebastianbergmann/phpunit/${pkgver}/LICENSE"
         'phpunit.install')
-md5sums=('c3f36da69b42b69a03c3c0cfe33ede77'
+md5sums=('fc328b8e847c1c9fad0d1c18238533f2'
          '01b410a927527be5ab60ccdcf75477a0'
          'b46c539c898e61924892913eb7099201')
 
