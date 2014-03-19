@@ -1,4 +1,8 @@
-*/*.xz
-*/*.gz
-*/src/
-*/pkg/
+*.xz
+*.gz
+*.tgz
+*.bz2
+src/
+pkg/
+/phpunit/LICENSE
+/phpunit/*.phar
