@@ -1,5 +1,5 @@
-# $Id$
-# Maintainer:  Eric Bélanger <eric@archlinux.org>
+# Maintainer: Attila Bukor <r1pp3rj4ck@w4it.eu>
+# Contributor:  Eric Bélanger <eric@archlinux.org>
 # Contributor: Smith Dhumbumroong <zodmaner@gmail.com>
 pkgname=re-alpine-passfile
 _pkgname=re-alpine
