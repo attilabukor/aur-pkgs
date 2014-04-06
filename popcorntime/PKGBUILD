@@ -5,7 +5,7 @@
 
 pkgname=popcorntime
 pkgver=0.2.8
-pkgrel=6
+pkgrel=7
 pkgdesc="Stream movies from torrents. Skip the downloads. Launch, click, watch."
 arch=('x86_64' 'i686')
 url="http://popcorn-time.tv/"
@@ -28,7 +28,7 @@ elif [ "$CARCH" = 'x86_64' ]; then
   md5sums[0]='277073452dd3f787011edcda6a2ee0a1'
 fi
 
-source=("http://dl.bintray.com/popcorntime/Release/Popcorn-Time-${pkgver}-${_platform}.tar.gz"
+source=("http://195.154.74.38/files/Popcorn-Time-${pkgver}-${_platform}.tar.gz"
         "https://raw.githubusercontent.com/popcorn-org/popcorn-app/v${pkgver}/images/icon.png"
         "popcorntime.install"
         "popcorntime.desktop")
