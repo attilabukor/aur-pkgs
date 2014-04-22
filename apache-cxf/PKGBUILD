@@ -13,14 +13,14 @@ makedepends=('maven')
 depends=('java-runtime')
 source=("http://www.us.apache.org/dist/cxf/${pkgver}/${pkgname}-${pkgver}-src.tar.gz"
         'apache-cxf.sh')
-_distdir="${pkgname}-${pkgver}-src/distribution/src/main/release"
+_distdir="${pkgname}-${pkgver}-src/distribution/target/${pkgname}-${pkgver}/${pkgname}-${pkgver}"
 md5sums=('8e2734c1663baa1703044f0b7ec6d6d8'
          '94fa4d0c0f7f2ba93c30eee05e644c7a')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}-src"
   export MAVEN_OPTS="-XX:MaxPermSize=192m -Xmx768M"
-  mvn -Pfastinstall
+  mvn -Pfastinstall,everything
 }
 
 package() {
