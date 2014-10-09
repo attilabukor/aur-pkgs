@@ -17,7 +17,6 @@ conflicts=('popcorntime-beta' 'popcorntime-git')
 options=('!strip')
 install="popcorntime.install"
 _gitname=popcorn-app
-_versionhash="27addfd56275e8a2b28d114bb52ad9ff9aaf9c2e"
 md5sums=('efe872f41ed74a706308b4015e4fd82f'
          '9608f35f4cc083a0c36b0f4ef275ab10'
          'SKIP')
