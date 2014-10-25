@@ -7,7 +7,7 @@
 
 pkgname=popcorntime
 pkgver=0.3.4
-pkgrel=7
+pkgrel=8
 pkgdesc="Stream movies from torrents. Skip the downloads. Launch, click, watch."
 arch=('x86_64' 'i686')
 url="http://popcorntime.io/"
@@ -36,13 +36,12 @@ prepare() {
   cd "${srcdir}/${_gitname}"
 
   # Get dependencies
-  bower install
   npm install
 }
 
 build() {
   cd "${srcdir}/${_gitname}"
-  grunt build --force
+  grunt build
 
   # Thanks to Revelation60 for pointing it out
   # https://github.com/rogerwang/node-webkit/wiki/The-solution-of-lacking-libudev.so.0
