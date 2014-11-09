@@ -10,7 +10,7 @@ license=('custom')
 depends=('php')
 install='phpunit.install'
 source=("https://phar.phpunit.de/phpunit-${pkgver}.phar"
-        "https://raw2.github.com/sebastianbergmann/phpunit/${pkgver}/LICENSE"
+        "https://raw.githubusercontent.com/sebastianbergmann/phpunit/${pkgver}/LICENSE"
         'phpunit.install')
 md5sums=('7459d48e8e255c8ea6105455455be4c7'
          '01b410a927527be5ab60ccdcf75477a0'
