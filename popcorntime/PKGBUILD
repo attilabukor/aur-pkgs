@@ -74,17 +74,17 @@ package() {
 
   _bpath="${srcdir}/${_gitname}/build/releases/Popcorn-Time/${_platform}/Popcorn-Time"
 
-  install -dm755 "${pkgdir}/usr/share/${pkgname}"
+  install -dm755 "${pkgdir}/usr/lib/${pkgname}"
   install -dm755 "${pkgdir}/usr/bin"
 
   # Program
-  install -Dm755 "${_bpath}/Popcorn-Time" "${pkgdir}/usr/share/${pkgname}/"
-  install -Dm644 "${_bpath}/nw.pak" "${pkgdir}/usr/share/${pkgname}/"
-  install -Dm644 "${_bpath}/libffmpegsumo.so" "${pkgdir}/usr/share/${pkgname}/"
+  install -Dm755 "${_bpath}/Popcorn-Time" "${pkgdir}/usr/lib/${pkgname}/"
+  install -Dm644 "${_bpath}/nw.pak" "${pkgdir}/usr/lib/${pkgname}/"
+  install -Dm644 "${_bpath}/libffmpegsumo.so" "${pkgdir}/usr/lib/${pkgname}/"
 
   # Link to program
   mkdir -p "${pkgdir}/usr/bin"
-  ln -s "/usr/share/${pkgname}/Popcorn-Time" "${pkgdir}/usr/bin/${pkgname}"
+  ln -s "/usr/lib/${pkgname}/Popcorn-Time" "${pkgdir}/usr/bin/${pkgname}"
 
   # Desktop file
   install -Dm644 "${srcdir}/popcorntime.desktop" "${pkgdir}/usr/share/applications/popcorntime.desktop"
