@@ -67,7 +67,6 @@ build() {
   grunt css
   grunt bower_clean
   grunt nodewebkit
-  grunt shell:setexecutable
 
   # Thanks to Revelation60 for pointing it out
   # https://github.com/rogerwang/node-webkit/wiki/The-solution-of-lacking-libudev.so.0
