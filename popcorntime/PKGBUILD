@@ -23,7 +23,7 @@ md5sums=('efe872f41ed74a706308b4015e4fd82f'
          '1f1cc562fa752ef1b20916727cf46f51'
          'SKIP'
          'SKIP'
-         'SKIP)
+         'SKIP')
 
 if [ "$CARCH" = 'i686' ]; then
   _platform=linux32
