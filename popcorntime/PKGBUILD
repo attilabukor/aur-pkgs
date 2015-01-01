@@ -24,7 +24,6 @@ md5sums=('efe872f41ed74a706308b4015e4fd82f'
          '9e81af80a48fe1f0cfb31868501d126a'
          'SKIP'
          'SKIP'
-         'SKIP'
          'SKIP')
 
 if [ "$CARCH" = 'i686' ]; then
