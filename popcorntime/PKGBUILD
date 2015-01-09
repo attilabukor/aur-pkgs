@@ -64,6 +64,9 @@ prepare() {
 
   # Get dependencies
   npm install
+
+  # see https://discuss.popcorntime.io/t/simple-fix-for-movie-covers/10834
+  sed -i "s|return uri.filename(file + '-' + width + '.' + ext).toString();|return imageUrl.replace('/original/', '/thumb/');|g" src/app/lib/providers/trakttv.js
 }
 
 build() {
