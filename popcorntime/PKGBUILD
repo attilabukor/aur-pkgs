@@ -45,7 +45,7 @@ prepare() {
 
   cd "${srcdir}/${_gitname}"
 
-  # git repose moved when switching to gitlab
+  # git repos moved when switching to gitlab
   sed -i "s|https://git.popcorntime.io/stash/scm/mir/|https://git.popcorntime.io/mirrors/|g" package.json # node-airplay-js, peerflix, chromecast-js, dlna-js
   sed -i "s|https://git.popcorntime.io/stash/scm/thrd/popcorn-opensubtitles|https://git.popcorntime.io/popcorntime/opensubtitles|g" package.json
 
