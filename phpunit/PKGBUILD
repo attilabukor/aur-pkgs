@@ -13,7 +13,7 @@ source=("https://phar.phpunit.de/phpunit-${pkgver}.phar"
         "https://raw.githubusercontent.com/sebastianbergmann/phpunit/${pkgver}/LICENSE"
         'phpunit.install')
 md5sums=('be85375d33ea3c4c0407528974d2dd9c'
-         '01b410a927527be5ab60ccdcf75477a0'
+         '61b8f921dcb4c23a050e7253cae57980'
          'b46c539c898e61924892913eb7099201')
 
 package() {
